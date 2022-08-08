@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table (name = "tb_temas")
@@ -16,6 +17,7 @@ public class TemaModel {
 	private Long id;
 	
 	@NotBlank (message = "O atributo discrição é obrigatório e não pode utilizar espaços em branco!")
+	@Size (min=5, max=1000)
 	private String descricao;
 	
 
