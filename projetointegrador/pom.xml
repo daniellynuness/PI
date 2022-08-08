@@ -8,11 +8,11 @@
 		<version>2.6.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.generation</groupId>
+	<groupId>com.generation</groupId>
 	<artifactId>projetointegrador</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Projeto Integrador </name>
-	<description>Projeto Integrador desenvolvido para Generation</description>
+	<name>Projeto Integrador</name>
+	<description>Projeto Integrador desenvolvido na Generation</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
