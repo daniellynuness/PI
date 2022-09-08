@@ -46,14 +46,19 @@ public class UsuarioModel {
 	@JsonIgnoreProperties("usuario")
 	private List<PostagemModel> postagem;
 	
+	private String tipo;
+	
+	private String documento;
 	
 
-	public UsuarioModel(Long id, String nome, String usuario, String senha, String foto) {
+	public UsuarioModel(Long id, String nome, String usuario, String senha, String foto, String tipo, String documento) {
 		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.senha = senha;
 		this.foto = foto;
+		this.tipo = tipo;
+		this.documento = documento;
 	}
 
 	public UsuarioModel() {
@@ -106,6 +111,24 @@ public class UsuarioModel {
 	public void setPostagem(List<PostagemModel> postagem) {
 		this.postagem = postagem;
 	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public String getDocumento() {
+		return documento;
+	}
+
+	public void setDocumento(String documento) {
+		this.documento = documento;
+	}
+	
+	
 
 	
 }

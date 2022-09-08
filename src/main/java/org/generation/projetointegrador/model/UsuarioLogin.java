@@ -8,6 +8,8 @@ public class UsuarioLogin {
 	private String senha;
 	private String foto;
 	private String token;
+	private String tipo;
+	private String documento;
 
 	public Long getId() {
 		return this.id;
@@ -56,5 +58,23 @@ public class UsuarioLogin {
 	public void setToken(String token) {
 		this.token = token;
 	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public String getDocumento() {
+		return documento;
+	}
+
+	public void setDocumento(String documento) {
+		this.documento = documento;
+	}
+	
+	
 
 }
