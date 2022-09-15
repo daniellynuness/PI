@@ -37,11 +37,14 @@ public class BasicSecurityConfig {
 
 	        http
 	            .authorizeHttpRequests((auth) -> auth
-	                .antMatchers("/usuarios/logar").permitAll()
-	                .antMatchers("/usuarios/cadastrar").permitAll()
-	                .antMatchers(HttpMethod.OPTIONS).permitAll()
-	                .anyRequest().authenticated())
-	            .httpBasic();
+	            		.antMatchers("/**").permitAll()
+	    				.antMatchers("/usuarios/logar").permitAll()
+	    				.antMatchers("/usuarios/cadastrar").permitAll()
+	    				.antMatchers("/usuarios/all").permitAll()
+	    				.antMatchers(HttpMethod.GET ,"/usuarios/{id}").permitAll()
+	    				.antMatchers(HttpMethod.OPTIONS).permitAll()
+	    				.anyRequest().authenticated())
+	    				.httpBasic();
 
 	        return http.build();
 
